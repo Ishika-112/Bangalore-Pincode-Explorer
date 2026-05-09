@@ -21,7 +21,6 @@ A full stack web application that allows users to search Bangalore area names us
 ## Project Structure
 
 ```bash
-backend/
 │
 ├── app.py
 ├── data.json
