@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pincode Finder</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Bangalore Pincode Explorer</h1>
+
+        <!-- Area Search -->
+        <div class="box">
+            <h2>Search by Area</h2>
+
+            <input type="text" id="areaInput" placeholder="Enter Area Name">
+
+            <button onclick="searchArea()">
+                Search
+            </button>
+
+            <p id="areaResult"></p>
+        </div>
+
+        <!-- Pincode Search -->
+        <div class="box">
+            <h2>Search by Pincode</h2>
+
+            <input type="text" id="pincodeInput" placeholder="Enter Pincode">
+
+            <button onclick="searchPincode()">
+                Search
+            </button>
+
+            <p id="pincodeResult"></p>
+        </div>
+
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
